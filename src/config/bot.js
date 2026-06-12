@@ -12,7 +12,7 @@ export const botConfig = {
   // - "invisible" = appears offline
   presence: {
     // Current online state shown on Discord.
-    status: "online",
+    status: "dnd",
 
     // Activity lines shown under the bot name.
     // `type` number mapping from Discord:
@@ -25,7 +25,7 @@ export const botConfig = {
     activities: [
       {
         // Text users will see (example: "Playing /help | Titan Bot").
-        name: "Made with ❤️",
+        name: "Made by Myth",
         // Activity type number (0 = Playing).
         type: 0, 
       },
@@ -136,7 +136,7 @@ export const botConfig = {
     },
     footer: {
       // Default footer text used in bot embeds.
-      text: "Titan Bot",
+      text: "DarkMyth",
       // Footer icon URL (null = no icon).
       icon: null,
     },
@@ -156,36 +156,36 @@ export const botConfig = {
   economy: {
     currency: {
       // Currency display name.
-      name: "coins",
+      name: "Robux",
       // Plural display name.
-      namePlural: "coins",
+      namePlural: "Robux",
       // Currency symbol shown in balances.
-      symbol: "$",
+      symbol: "R$",
     },
 
     // Starting balance for new users.
-    startingBalance: 0,
+    startingBalance: 1,
 
     // Maximum bank amount before upgrades (if upgrades are used).
-    baseBankCapacity: 100000,
+    baseBankCapacity: 10000,
 
     // Daily reward amount.
-    dailyAmount: 100,
+    dailyAmount: 2,
 
     // Work command random payout range.
-    workMin: 10,
-    workMax: 100,
+    workMin: 5,
+    workMax: 25,
 
     // Beg command random payout range.
     begMin: 5,
-    begMax: 50,
+    begMax: 20,
 
     // Chance to succeed when robbing (0.4 = 40%).
-    robSuccessRate: 0.4,
+    robSuccessRate: 0.15,
 
     // Jail time after failed rob (milliseconds).
     // 3600000 = 1 hour.
-    robFailJailTime: 3600000, 
+    robFailJailTime: 36000000000000100, 
   },
 
   // =========================
@@ -303,7 +303,7 @@ export const botConfig = {
       defaultCriteria: "none",
 
       // Days used when `defaultCriteria` is `account_age`.
-      defaultAccountAgeDays: 7,
+      defaultAccountAgeDays: 1,
 
       // Member count threshold used when `defaultCriteria` is `server_size`.
       // Example: 1000 means auto-verify if server has fewer than 1000 members.
@@ -427,7 +427,7 @@ export const botConfig = {
     missingPermissions:
       "I am missing required permissions to perform this action.",
     commandDisabled: "This command has been disabled.",
-    maintenanceMode: "The bot is currently in maintenance mode.",
+    maintenanceMode: "The bot is currently down.",
   },
 
   // =========================
