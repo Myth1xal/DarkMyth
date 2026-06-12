@@ -59,6 +59,8 @@ export const botConfig = {
       { question: "What is your name?", required: true },
       { question: "How old are you?", required: true },
       { question: "Why do you want to join?", required: true },
+      { question: "List your usernames on roblox and discord", required: true },
+      { question: "Is there anything else you want use to know?", required: false },
     ],
 
     // Embed colors by application status.
